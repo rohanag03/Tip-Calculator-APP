@@ -1,4 +1,4 @@
-# Tip-Calculator-APP
+# Tip Calculator APP
 I am following the [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course) pathway and I have created this app.
 
 Here I have a Tip Calculating APP that takes an user input for the costbof service and calcuates the tip based on the option to choose the percentage they want to tip.
