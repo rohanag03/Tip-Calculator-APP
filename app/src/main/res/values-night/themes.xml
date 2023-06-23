@@ -7,7 +7,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_lighter</item>
         <item name="colorPrimaryVariant">@color/blue_lighter</item>
-        <item name="colorOnPrimary">@color/blue_light</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blue_light</item>
         <item name="colorSecondaryVariant">@color/blue_light</item>
