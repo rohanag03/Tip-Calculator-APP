@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(){
         val cost = stringInTextField.toDoubleOrNull()
         if (cost == null){
             binding.tipResult.text = ""
+            binding.totalAmount.text = ""
             return
         }
         val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
@@ -38,7 +39,12 @@ class MainActivity : AppCompatActivity(){
         }
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipResult.text = getString(R.string.tip_amount, formattedTip )
+
+        var amount = tip + cost
+        val totalAmount = NumberFormat.getCurrencyInstance().format(amount)
+        binding.totalAmount.text = getString(R.string.total_amount, totalAmount)
     }
+
     private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
             // Hide the keyboard
